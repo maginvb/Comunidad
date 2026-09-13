@@ -80,7 +80,7 @@
     </div>
 
     <div data-r="hero-photo-wrap" style="position:relative; width:100%; margin:0; aspect-ratio:1127/751; border-radius:15px; overflow:hidden; background:#f6f9fd; box-shadow:0 10px 24px -18px rgba(18,53,107,0.16);">
-      <image-slot id="hero-photo" src="" shape="rect" fit="cover" placeholder="Foto: grupo amplio conversando, energía de comunidad"></image-slot>
+      <image-slot id="hero-photo" src="assets/hero-photo.webp" shape="rect" fit="cover" placeholder="Foto: grupo amplio conversando, energía de comunidad"></image-slot>
     </div>
   </section>
 
@@ -113,7 +113,7 @@
         </div>
       </div>
       <div style="position:relative; width:100%; aspect-ratio:1/1; border-radius:15px; overflow:hidden; box-shadow:0 10px 24px -18px rgba(18,53,107,0.16);">
-        <image-slot id="comunidad-photo" src="" shape="rect" fit="cover" placeholder="Foto: 4–6 personas conversando alrededor de una mesa"></image-slot>
+        <image-slot id="comunidad-photo" src="assets/comunidad-photo.webp" shape="rect" fit="cover" placeholder="Foto: 4–6 personas conversando alrededor de una mesa"></image-slot>
       </div>
     </div></section>
 
@@ -127,16 +127,16 @@
         </div>
         <form onSubmit="{{ handleSubmit }}" style="display:flex; flex-direction:column; gap:18px; background:#fff; border-radius:14px; padding:clamp(24px,3.5vw,34px); box-shadow:0 10px 24px -18px rgba(18,53,107,0.16);">
           <label style="display:flex; flex-direction:column; gap:7px; font-size:14.5px; font-weight:600; color:#12356b;">Nombres y Apellidos
-            <input type="text" required="" value="{{ nombre }}" onChange="{{ setNombre }}" placeholder="Ej. María Torres" style="font-family:inherit; font-size:15.5px; color:#1e293b; padding:12px 14px; border:1px solid #d7dfec; border-radius:9px; outline:none;">
+            <input type="text" required="{{ true }}" value="{{ nombre }}" onChange="{{ setNombre }}" placeholder="Ej. María Torres" style="font-family:inherit; font-size:15.5px; color:#1e293b; padding:12px 14px; border:1px solid #d7dfec; border-radius:9px; outline:none;">
           </label>
           <label style="display:flex; flex-direction:column; gap:7px; font-size:14.5px; font-weight:600; color:#12356b;">WhatsApp
-            <input type="tel" required="" value="{{ whatsapp }}" onChange="{{ setWhatsapp }}" placeholder="+51 900 000 000" style="font-family:inherit; font-size:15.5px; color:#1e293b; padding:12px 14px; border:1px solid #d7dfec; border-radius:9px; outline:none;">
+            <input type="tel" required="{{ true }}" value="{{ whatsapp }}" onChange="{{ setWhatsapp }}" placeholder="+51 900 000 000" style="font-family:inherit; font-size:15.5px; color:#1e293b; padding:12px 14px; border:1px solid #d7dfec; border-radius:9px; outline:none;">
           </label>
           <label style="display:flex; flex-direction:column; gap:7px; font-size:14.5px; font-weight:600; color:#12356b;">Perfil de LinkedIn
-            <input type="url" required="" value="{{ linkedin }}" onChange="{{ setLinkedin }}" placeholder="linkedin.com/in/tu-perfil" style="font-family:inherit; font-size:15.5px; color:#1e293b; padding:12px 14px; border:1px solid #d7dfec; border-radius:9px; outline:none;">
+            <input type="url" required="{{ true }}" value="{{ linkedin }}" onChange="{{ setLinkedin }}" placeholder="linkedin.com/in/tu-perfil" style="font-family:inherit; font-size:15.5px; color:#1e293b; padding:12px 14px; border:1px solid #d7dfec; border-radius:9px; outline:none;">
           </label>
           <label style="display:flex; flex-direction:column; gap:7px; font-size:14.5px; font-weight:600; color:#12356b;">¿Cuál es hoy tu principal desafío en gestión del cambio?
-            <select required="" value="{{ desafio }}" onChange="{{ setDesafio }}" style="font-family:inherit; font-size:15.5px; color:#1e293b; padding:12px 14px; border:1px solid #d7dfec; border-radius:9px; outline:none; background:#fff;">
+            <select required="{{ true }}" value="{{ desafio }}" onChange="{{ setDesafio }}" style="font-family:inherit; font-size:15.5px; color:#1e293b; padding:12px 14px; border:1px solid #d7dfec; border-radius:9px; outline:none; background:#fff;">
               <option value="" disabled="">Selecciona una opción</option>
               <option value="Adopción del cambio">Adopción del cambio</option>
               <option value="Resistencia al cambio">Resistencia al cambio</option>
